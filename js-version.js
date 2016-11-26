@@ -15,7 +15,7 @@
         return array.reverse();
     })()
 
-    window.jsv = "";
+    window.js_version = "";
 
     var script = undefined;
     var version = undefined;
@@ -24,7 +24,7 @@
         version = versions.pop();
         scripts.push((script = document.createElement("script")));
         script.setAttribute("language", "javascript" + version);
-        script.text = "window.jsv = '" + version + "';";
+        script.text = "window.js_version = '" + version + "';";
         document.head.appendChild(script);
     }
 
